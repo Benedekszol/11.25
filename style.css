@@ -1,0 +1,64 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+
+    background: url(./img/bakcround.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    background-color: brown;
+    font-weight: 600;
+}
+
+button{
+    width: 80%;
+    height: 10%;
+    background:linear-gradient(white,red);
+    border-radius: 40%;
+}
+
+
+p{
+    width: 100%;
+}
+
+h3{
+    width: 100%;
+}
+
+img{
+    width: 80%;
+    filter: grayscale(70%);
+    border-radius: 40%;
+}
+
+button:hover{
+    transform: translateY(30px);
+    
+}
+
+@media (max-width: 900px) {
+    .card{
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px) {
+    .section{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
